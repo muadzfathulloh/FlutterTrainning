@@ -49,7 +49,8 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 1;
-  String _text = "Bil Genap (X3): ";
+  int _bil = 2;
+  String _text = "Bil Prima : ";
 
   void _incrementCounter() {
     setState(() {
@@ -63,13 +64,15 @@ class _MyHomePageState extends State<MyHomePage> {
         _counter = 1;
       }
 
-      _text = "Bil Genap (X3): ";
+      _text = "Bil Prima : ";
       for (int i = 1; i <= _counter; i++) {
-        if (i % 2 == 0) {
-          if (i % 3 == 0) {
-            _text += '${i}, ';
-          }
+        for (int j = 1; j <= i; j++) {
+          if (i % j == 0) _bil++;
         }
+        if (_bil == 2) {
+          _text += '${i}, ';
+        }
+        _bil = 0;
       }
     });
   }
