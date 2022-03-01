@@ -39,6 +39,14 @@ class DetailScreen extends StatelessWidget {
                 ),
               ),
             ),
+            Container(
+              padding: const EdgeInsets.all(16.0),
+              child: const Text(
+                'Heroes Monument, also known as Heroic Monument (Indonesian:Tugu Pahlawan) is a monument in Surabaya, Indonesia. It is the main symbol of the city, dedicated to the people who died during the Battle of Surabaya on November 10, 1945',
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 16.0),
+              ),
+            )
           ],
         ),
       ),
