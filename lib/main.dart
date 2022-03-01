@@ -31,7 +31,7 @@ class DetailScreen extends StatelessWidget {
             Container(
               margin: EdgeInsets.only(top: 16.0),
               child: Text(
-                "Surabaya Submarine Monument",
+                "Surabaya Heroic Monument",
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 30.0,
