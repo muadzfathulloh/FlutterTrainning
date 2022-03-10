@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_1/model/tourism_place.dart';
 
 class DetailScreen extends StatelessWidget {
-  const DetailScreen({Key? key}) : super(key: key);
+  const DetailScreen({Key? key, required this.place}) : super(key: key);
+
+  final TourismPlace place;
 
   @override
   Widget build(BuildContext context) {
@@ -11,16 +14,16 @@ class DetailScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Image.asset(
-              'assets/images/heroic1.jpg',
+              place.imageAsset,
               fit: BoxFit.cover,
               width: double.infinity,
             ),
             Container(
               margin: EdgeInsets.only(top: 16.0),
               child: Text(
-                "Surabaya Heroic Monument",
+                place.name,
                 textAlign: TextAlign.center,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 30.0,
                   fontWeight: FontWeight.bold,
                 ),
