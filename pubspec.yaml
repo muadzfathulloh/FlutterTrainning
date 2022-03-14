@@ -64,10 +64,33 @@ flutter:
     - assets/images/heroic3.jpg
     - assets/images/heroic4.jpg
     - assets/images/zoo1.jpg
+    - assets/images/zoo2.jpg
+    - assets/images/zoo3.jpg
+    - assets/images/zoo4.jpg
     - assets/images/beach1.jpg
+    - assets/images/beach2.jpg
+    - assets/images/beach3.jpg
+    - assets/images/beach4.jpg
     - assets/images/bambu1.jpg
+    - assets/images/bambu2.jpg
+    - assets/images/bambu3.jpg
+    - assets/images/bambu4.jpg
     - assets/images/alun.jpg
+    - assets/images/alun2.jpg
+    - assets/images/alun3.jpg
+    - assets/images/alun4.jpg
     - assets/images/runcing1.jpg
+    - assets/images/runcing2.jpg
+    - assets/images/runcing3.jpg
+    - assets/images/runcing4.jpg
+    - assets/images/bungkul1.jpg
+    - assets/images/bungkul2.jpg
+    - assets/images/bungkul3.jpg
+    - assets/images/bungkul4.jpg
+    - assets/images/patung1.jpg
+    - assets/images/patung2.jpg
+    - assets/images/patung3.jpg
+    - assets/images/patung4.jpg
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

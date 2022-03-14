@@ -35,21 +35,21 @@ class DetailScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
                   Column(
-                    children: const <Widget>[
+                    children: <Widget>[
                       Icon(Icons.calendar_today),
-                      Text('Open Everyday')
+                      Text(place.day)
                     ],
                   ),
                   Column(
-                    children: const <Widget>[
+                    children: <Widget>[
                       Icon(Icons.access_time),
-                      Text('08.00-16.00')
+                      Text(place.hour)
                     ],
                   ),
                   Column(
-                    children: const <Widget>[
+                    children: <Widget>[
                       Icon(Icons.attach_money),
-                      Text('Rp.2.000,-')
+                      Text(place.fee)
                     ],
                   ),
                 ],
@@ -57,8 +57,8 @@ class DetailScreen extends StatelessWidget {
             ),
             Container(
               padding: const EdgeInsets.all(16.0),
-              child: const Text(
-                'Heroes Monument, also known as Heroic Monument (Indonesian:Tugu Pahlawan) is a monument in Surabaya, Indonesia. It is the main symbol of the city, dedicated to the people who died during the Battle of Surabaya on November 10, 1945. Entrance fee only Rp.2000,00/person',
+              child: Text(
+                place.desc,
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 16.0),
               ),
@@ -70,20 +70,15 @@ class DetailScreen extends StatelessWidget {
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(3.0),
-                    child: Image.network(
-                        'https://media-cdn.tripadvisor.com/media/photo-m/1280/16/a9/33/43/liburan-di-farmhouse.jpg'),
+                    child: Image.asset(place.galery[0]),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(3.0),
-                    child: Image.asset('assets/images/heroic2.jpg'),
+                    child: Image.asset(place.galery[1]),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(3.0),
-                    child: Image.asset('assets/images/heroic3.jpg'),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(3.0),
-                    child: Image.asset('assets/images/heroic4.jpg'),
+                    child: Image.asset(place.galery[2]),
                   ),
                 ],
               ),
