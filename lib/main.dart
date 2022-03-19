@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_1/main_screen.dart';
 import 'package:flutter_1/model/tourism_place.dart';
+import 'package:flutter_1/provider/done_tourism_provider.dart';
+import 'package:provider/provider.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,10 +14,13 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Training',
-      theme: ThemeData(),
-      home: MainScreen(),
+    return ChangeNotifierProvider(
+      create: (context) => DoneTourismProvider(),
+      child: MaterialApp(
+        title: 'Contacts',
+        theme: ThemeData(),
+        home: MainScreen(),
+      ),
     );
   }
 }

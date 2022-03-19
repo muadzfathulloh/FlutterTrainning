@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_1/model/tourism_place.dart';
+import 'package:provider/provider.dart';
+import '../provider/done_tourism_provider.dart';
 
 class DoneTourismList extends StatelessWidget {
   final List<TourismPlace> doneTourismPlaceList;
@@ -8,6 +10,12 @@ class DoneTourismList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final List<TourismPlace> doneTourismPlaceList =
+        Provider.of<DoneTourismProvider>(
+      context,
+      listen: false,
+    ).doneTourismPlaceList;
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Wisata telah dikunjungi'),
