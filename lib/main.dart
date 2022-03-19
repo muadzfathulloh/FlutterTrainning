@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Training',
       theme: ThemeData(),
-      home: const MainScreen(),
+      home: MainScreen(),
     );
   }
 }
